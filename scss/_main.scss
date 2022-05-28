@@ -13,6 +13,19 @@ body {
   color: $gray-600;
 }
 
+.rounded-4 {
+  border-radius: 0.75rem;
+}
+
+.rounded-top-4 {
+  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+}
+
+.card-shadow {
+  box-shadow: 0px 2px 10px #ebebeb;
+}
+
 // bootstrap
 .btn {
   padding: 12px 32px;
@@ -66,6 +79,14 @@ body {
 // feature
 .feature img {
   height: 90px;
+}
+
+// role
+.role {
+  .card-text {
+    // min-height: 2 * font-size * line-height
+    min-height: calc(2rem * 1.5);
+  }
 }
 
 @media screen and(max-width: 576px) {

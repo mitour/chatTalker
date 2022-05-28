@@ -12752,6 +12752,20 @@ body {
   color: #747474;
 }
 
+.rounded-4 {
+  border-radius: 0.75rem;
+}
+
+.rounded-top-4 {
+  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+}
+
+.card-shadow {
+  -webkit-box-shadow: 0px 2px 10px #ebebeb;
+          box-shadow: 0px 2px 10px #ebebeb;
+}
+
 .btn {
   padding: 12px 32px;
 }
@@ -12786,6 +12800,10 @@ body {
 
 .feature img {
   height: 90px;
+}
+
+.role .card-text {
+  min-height: calc(2rem * 1.5);
 }
 
 @media screen and (max-width: 576px) {
