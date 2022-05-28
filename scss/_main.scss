@@ -145,6 +145,20 @@ body {
   }
 }
 
+// footer
+.footer-banner {
+  min-height: 500px;
+  padding-top: 270px; // position h2
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.copyright {
+  background-color: $gray-300;
+}
+
 @media screen and(max-width: 576px) {
   .navbar {
     border-bottom: 2px solid $secondary;
@@ -168,6 +182,10 @@ body {
     // ball_2 top: 3067 / 5775 = 53%
     // ball_3 top: 4827 / 5775 = 84%
     background-position: -77px 13%, calc(100% + 47px) 53%, -76px 84%;
+  }
+  .footer-banner {
+    min-height: 460px;
+    padding-top: 290px; // position h2
   }
 }
 
