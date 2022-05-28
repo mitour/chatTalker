@@ -1,3 +1,4 @@
+// base
 *,
 *::after,
 *::before {
@@ -6,6 +7,10 @@
 
 body {
   font-family: "Noto Sans TC", sans-serif;
+}
+
+.sub-text {
+  color: $gray-600;
 }
 
 // bootstrap
@@ -48,12 +53,19 @@ body {
     calc(100% + 100px) 46%, 50px 72%;
 }
 
+// navbar
 .logo {
   height: 40px;
 }
 
+// banner
 .slogan {
   margin: 32px 0;
+}
+
+// feature
+.feature img {
+  height: 90px;
 }
 
 @media screen and(max-width: 576px) {
@@ -85,9 +97,6 @@ body {
 // 假內容
 .mb {
   margin-bottom: 100px;
-}
-.section1 {
-  height: 315px;
 }
 .section2 {
   height: 527px;
