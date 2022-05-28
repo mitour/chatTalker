@@ -29,11 +29,11 @@ body {
 // bootstrap
 .btn {
   padding: 12px 32px;
+  color: $white;
 }
 
 .btn-accent {
   padding: 8px 32px;
-  color: $white;
 }
 
 // 單位
@@ -79,6 +79,20 @@ body {
 // media
 .media img {
   height: 90px;
+}
+
+// feature
+.feature {
+  .card {
+    max-width: 230px;
+  }
+}
+.ellipase {
+  width: 86px;
+  height: 86px;
+  img {
+    object-fit: scale-down;
+  }
 }
 
 // role

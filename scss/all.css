@@ -12768,11 +12768,11 @@ body {
 
 .btn {
   padding: 12px 32px;
+  color: #fff;
 }
 
 .btn-accent {
   padding: 8px 32px;
-  color: #fff;
 }
 
 .mb-30 {
@@ -12800,6 +12800,19 @@ body {
 
 .media img {
   height: 90px;
+}
+
+.feature .card {
+  max-width: 230px;
+}
+
+.ellipase {
+  width: 86px;
+  height: 86px;
+}
+.ellipase img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .role .card-text {
