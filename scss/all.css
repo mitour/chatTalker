@@ -12775,6 +12775,21 @@ body {
   padding: 8px 32px;
 }
 
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 0;
+  margin: 0 0.5rem;
+  background-color: #dddddd;
+  padding: 0;
+}
+.carousel-indicators button.active {
+  width: 1rem;
+  border-radius: 5rem;
+  background-color: #ffd153;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -12817,6 +12832,37 @@ body {
 
 .role .card-text {
   min-height: calc(2rem * 1.5);
+}
+
+.feedback img {
+  height: 80px;
+  width: 80px;
+  -webkit-transform: translate(32px, 24px);
+          transform: translate(32px, 24px);
+  position: relative;
+  z-index: 1;
+}
+
+.rate {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_star.svg);
+  background-size: 1.5rem 1rem;
+  background-repeat: space;
+  height: 1rem;
+}
+.rate-1 {
+  width: 1.5rem;
+}
+.rate-2 {
+  width: 3rem;
+}
+.rate-3 {
+  width: 4.5rem;
+}
+.rate-4 {
+  width: 6rem;
+}
+.rate-5 {
+  width: 7.5rem;
 }
 
 @media screen and (max-width: 576px) {
