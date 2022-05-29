@@ -12756,8 +12756,8 @@ body {
 }
 
 .shadow-xs {
-  -webkit-box-shadow: 0px 2px 10px #ebebeb;
-          box-shadow: 0px 2px 10px #ebebeb;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .btn {
