@@ -4,12 +4,39 @@
 }
 
 // overwrite bootstrap's settings
+// 方案選項按鈕 hover 跟 active 時的文字顏色
 .btn-check:checked + .btn-outline-primary,
 .btn-check:active + .btn-outline-primary,
 .btn-outline-primary:active,
 .btn-outline-primary.active,
 .btn.btn-outline-primary:hover {
   color: #fff;
+}
+
+// faq 手風琴圓角、icon
+.accordion-item:first-of-type, // overwrite default settings
+.accordion-item:last-of-type, // overwrite default settings
+.accordion-item {
+  border-radius: 0.75rem;
+  .accordion-button,
+  .accordion-button.collapsed {
+    border-radius: calc(0.75rem - 1px);
+  }
+}
+.accordion-button {
+  // 關起來的時候
+  &::after {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_plus.svg);
+    background-position: center;
+  }
+  // 展開的時候
+  &:not(.collapsed) {
+    color: $primary;
+    font-weight: bold;
+    &::after {
+      background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_minus.svg);
+    }
+  }
 }
 
 .bg-case {
@@ -83,7 +110,7 @@
 *,
 *::before,
 *::after {
-  outline: 1px solid lightblue;
+  // outline: 1px solid lightblue;
 }
 .article1 {
   height: 768px;
