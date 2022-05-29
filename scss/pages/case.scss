@@ -1,0 +1,67 @@
+.bg-index {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg),
+    url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
+  background-size: 65vw auto, 361px;
+  // ball top: 876 / 1990 = 44%
+  background-position: right top, -267px 44%;
+
+  // 灰色背景的部分
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #f7f9fd;
+    height: 470px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    border-bottom-left-radius: 300px;
+  }
+}
+
+// banner
+.banner {
+  background-image: none; // overwrite index page bg
+  min-height: 382px;
+}
+
+@media (max-width: 576px) {
+  .bg-index {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg),
+      url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
+    // ball top: 1263 / 2436 = 52%
+    background-position: right top, -108px 52%;
+    // image height: banner + navbar = 576px
+    background-size: auto 576px, 204px;
+    // 灰色背景的部分
+    &::before {
+      border-bottom-left-radius: 150px;
+      height: 567px; // banner + navbar
+    }
+  }
+  .banner {
+    min-height: 495px;
+  }
+}
+
+// debug
+*,
+*::before,
+*::after {
+  outline: 1px solid lightblue;
+}
+.article1 {
+  height: 768px;
+}
+.article2 {
+  height: 396px;
+}
+
+@media (max-width: 576px) {
+  .article1 {
+    height: 1250px;
+  }
+  .article2 {
+    height: 384;
+  }
+}
