@@ -7,5 +7,9 @@
 // lib
 @import "./bootstrap/bootstrap.scss";
 
-@import "./main";
+@import "./base";
+@import "./utilities";
+
+// pages
+@import "./pages/index";
 @import "./pages/case";

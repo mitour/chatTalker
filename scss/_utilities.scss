@@ -1,0 +1,37 @@
+// overwrite bootstrap's settings
+.btn {
+  padding: 12px 32px;
+  color: $white;
+}
+
+.btn-accent {
+  padding: 8px 32px;
+}
+
+// utilities
+.mb-xl {
+  margin-bottom: 100px;
+}
+
+.rounded-4 {
+  border-radius: 0.75rem;
+}
+
+.rounded-top-4 {
+  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+}
+
+.shadow-xs {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bg-gray-300 {
+  background-color: $gray-300;
+}
+
+@media screen and(max-width: 576px) {
+  .mb-xl {
+    margin-bottom: 60px;
+  }
+}

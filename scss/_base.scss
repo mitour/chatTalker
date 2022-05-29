@@ -1,0 +1,29 @@
+// base
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+// layout
+.wrap {
+  // max-width: 1366px;
+  margin: 0 auto;
+}
+
+.container {
+  // max-width: 1120px;
+}
+
+// navbar
+.logo {
+  height: 40px;
+}
+
+@media screen and(max-width: 576px) {
+  .navbar {
+    border-bottom: 2px solid $secondary;
+    background-color: #fff;
+  }
+  .logo {
+    height: 24px;
+  }
+}

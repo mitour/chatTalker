@@ -1,8 +1,3 @@
-// utilities
-.bg-gray-300 {
-  background-color: $gray-300;
-}
-
 // overwrite bootstrap's settings
 // 方案選項按鈕 hover 跟 active 時的文字顏色
 .btn-check:checked + .btn-outline-primary,
@@ -39,7 +34,7 @@
   }
 }
 
-.bg-case {
+.case-bg {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg),
     url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
   background-size: 65vw auto, 361px;
@@ -62,15 +57,14 @@
 }
 
 // banner
-.banner {
-  background-image: none; // overwrite index page bg
+.case-banner {
   min-height: 382px;
 }
 
 // case
 .case {
   .btn-outline-primary {
-    color: $primary;
+    color: $primary; // overwrite utilities' settings
   }
   .options {
     overflow-x: auto;
@@ -83,8 +77,8 @@
   vertical-align: middle;
 }
 
-@media (max-width: 576px) {
-  .bg-case {
+@media screen and(max-width: 576px) {
+  .case-bg {
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg),
       url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
     // ball top: 1263 / 2436 = 52%
@@ -97,33 +91,11 @@
       height: 567px; // banner + navbar
     }
   }
-  .banner {
+  .case-banner {
     min-height: 495px;
   }
   .subscriptions sub,
   .fee sub {
     margin-left: 4px;
-  }
-}
-
-// debug
-*,
-*::before,
-*::after {
-  // outline: 1px solid lightblue;
-}
-.article1 {
-  height: 768px;
-}
-.article2 {
-  height: 396px;
-}
-
-@media (max-width: 576px) {
-  .article1 {
-    height: 1250px;
-  }
-  .article2 {
-    height: 384;
   }
 }

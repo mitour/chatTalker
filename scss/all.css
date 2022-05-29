@@ -12742,6 +12742,33 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
+.wrap {
+  margin: 0 auto;
+}
+
+.logo {
+  height: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    border-bottom: 2px solid #ffd153;
+    background-color: #fff;
+  }
+
+  .logo {
+    height: 24px;
+  }
+}
+.btn {
+  padding: 12px 32px;
+  color: #fff;
+}
+
+.btn-accent {
+  padding: 8px 32px;
+}
+
 .mb-xl {
   margin-bottom: 100px;
 }
@@ -12760,15 +12787,15 @@ body {
           box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.btn {
-  padding: 12px 32px;
-  color: #fff;
+.bg-gray-300 {
+  background-color: #f5f5f5;
 }
 
-.btn-accent {
-  padding: 8px 32px;
+@media screen and (max-width: 576px) {
+  .mb-xl {
+    margin-bottom: 60px;
+  }
 }
-
 .carousel-indicators button {
   width: 10px;
   height: 10px;
@@ -12784,19 +12811,11 @@ body {
   background-color: #ffd153;
 }
 
-.wrap {
-  margin: 0 auto;
-}
-
 .bg {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
   background-repeat: no-repeat;
   background-size: 60% auto, 360px, 310px, 150px;
   background-position: right top, -180px calc(100vh - 180px), calc(100% + 100px) 46%, 50px 72%;
-}
-
-.logo {
-  height: 40px;
 }
 
 .media img {
@@ -12856,24 +12875,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.copyright {
-  background-color: #f5f5f5;
-}
-
 @media screen and (max-width: 576px) {
-  .mb-xl {
-    margin-bottom: 60px;
-  }
-
-  .navbar {
-    border-bottom: 2px solid #ffd153;
-    background-color: #fff;
-  }
-
-  .logo {
-    height: 24px;
-  }
-
   .banner {
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg);
     background-repeat: no-repeat;
@@ -12892,10 +12894,6 @@ body {
     padding-top: 290px;
   }
 }
-.bg-gray-300 {
-  background-color: #f5f5f5;
-}
-
 .btn-check:checked + .btn-outline-primary,
 .btn-check:active + .btn-outline-primary,
 .btn-outline-primary:active,
@@ -12930,13 +12928,13 @@ body {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_minus.svg);
 }
 
-.bg-case {
+.case-bg {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
   background-size: 65vw auto, 361px;
   background-repeat: no-repeat;
   background-position: right top, -267px 44%;
 }
-.bg-case::before {
+.case-bg::before {
   content: "";
   position: absolute;
   background-color: #f7f9fd;
@@ -12948,8 +12946,7 @@ body {
   border-bottom-left-radius: 300px;
 }
 
-.banner {
-  background-image: none;
+.case-banner {
   min-height: 382px;
 }
 
@@ -12967,40 +12964,23 @@ body {
   vertical-align: middle;
 }
 
-@media (max-width: 576px) {
-  .bg-case {
+@media screen and (max-width: 576px) {
+  .case-bg {
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
     background-position: right top, -108px 52%;
     background-size: auto 576px, 204px;
   }
-  .bg-case::before {
+  .case-bg::before {
     border-bottom-left-radius: 150px;
     height: 567px;
   }
 
-  .banner {
+  .case-banner {
     min-height: 495px;
   }
 
   .subscriptions sub,
 .fee sub {
     margin-left: 4px;
-  }
-}
-.article1 {
-  height: 768px;
-}
-
-.article2 {
-  height: 396px;
-}
-
-@media (max-width: 576px) {
-  .article1 {
-    height: 1250px;
-  }
-
-  .article2 {
-    height: 384;
   }
 }
