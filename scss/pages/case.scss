@@ -1,7 +1,22 @@
-.bg {
+// utilities
+.bg-gray-300 {
+  background-color: $gray-300;
+}
+
+// overwrite bootstrap's settings
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.btn.btn-outline-primary:hover {
+  color: #fff;
+}
+
+.bg-case {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg),
     url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
   background-size: 65vw auto, 361px;
+  background-repeat: no-repeat;
   // ball top: 876 / 1990 = 44%
   background-position: right top, -267px 44%;
 
@@ -25,8 +40,24 @@
   min-height: 382px;
 }
 
+// case
+.case {
+  .btn-outline-primary {
+    color: $primary;
+  }
+  .options {
+    overflow-x: auto;
+  }
+}
+.subscriptions sub,
+.fee sub {
+  font-size: 0.375em;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
 @media (max-width: 576px) {
-  .bg {
+  .bg-case {
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg),
       url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
     // ball top: 1263 / 2436 = 52%
@@ -41,6 +72,10 @@
   }
   .banner {
     min-height: 495px;
+  }
+  .subscriptions sub,
+  .fee sub {
+    margin-left: 4px;
   }
 }
 
