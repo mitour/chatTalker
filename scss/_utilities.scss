@@ -9,6 +9,19 @@
 }
 
 // utilities
+.totop {
+  font-family: "Wendy One", sans-serif;
+  position: fixed;
+  right: 57px;
+  bottom: 57px;
+  width: 50px;
+  height: 50px;
+  padding: 18px 10px;
+  font-size: 14px;
+  line-height: 1;
+  z-index: 1;
+}
+
 .mb-xl {
   margin-bottom: 100px;
 }
@@ -31,6 +44,10 @@
 }
 
 @media screen and(max-width: 576px) {
+  .totop {
+    right: 1rem;
+    bottom: 1rem;
+  }
   .mb-xl {
     margin-bottom: 60px;
   }

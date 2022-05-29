@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Wendy+One&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -12769,6 +12769,19 @@ body {
   padding: 8px 32px;
 }
 
+.totop {
+  font-family: "Wendy One", sans-serif;
+  position: fixed;
+  right: 57px;
+  bottom: 57px;
+  width: 50px;
+  height: 50px;
+  padding: 18px 10px;
+  font-size: 14px;
+  line-height: 1;
+  z-index: 1;
+}
+
 .mb-xl {
   margin-bottom: 100px;
 }
@@ -12792,6 +12805,11 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .totop {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
   .mb-xl {
     margin-bottom: 60px;
   }
