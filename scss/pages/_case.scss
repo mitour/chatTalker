@@ -35,12 +35,10 @@
 }
 
 .case-bg {
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg),
-    url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
-  background-size: 65vw auto, 361px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg);
+  background-size: 65vw auto;
   background-repeat: no-repeat;
-  // ball top: 876 / 1990 = 44%
-  background-position: right top, -267px 44%;
+  background-position: right top;
 
   // 灰色背景的部分
   &::before {
@@ -54,6 +52,13 @@
     z-index: -1;
     border-bottom-left-radius: 300px;
   }
+}
+
+.case-bg-ball-1 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
+  background-size: 361px;
+  background-repeat: no-repeat;
+  background-position: -267px 325px;
 }
 
 // banner
@@ -79,17 +84,19 @@
 
 @media screen and(max-width: 576px) {
   .case-bg {
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg),
-      url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
-    // ball top: 1263 / 2436 = 52%
-    background-position: right top, -108px 52%;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg);
+    background-position: right top;
     // image height: banner + navbar = 576px
-    background-size: auto 576px, 204px;
+    background-size: auto 576px;
     // 灰色背景的部分
     &::before {
       border-bottom-left-radius: 150px;
       height: 567px; // banner + navbar
     }
+  }
+  .case-bg-ball-1 {
+    background-size: 204px;
+    background-position: -108px 677px;
   }
   .case-banner {
     min-height: 495px;

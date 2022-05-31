@@ -11693,10 +11693,24 @@ body {
 }
 
 .bg {
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg);
   background-repeat: no-repeat;
-  background-size: 60% auto, 360px, 310px, 150px;
-  background-position: right top, -180px calc(100vh - 180px), calc(100% + 100px) 46%, 50px 72%;
+  background-size: 60% auto, 360px, 150px;
+  background-position: right top, -180px calc(100vh - 180px);
+}
+
+.bg-ball-2 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% + 100px) 420px;
+  background-size: 310px;
+}
+
+.bg-ball-3 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
+  background-repeat: no-repeat;
+  background-position: 50px 40px;
+  background-size: 150px;
 }
 
 .media img {
@@ -11765,9 +11779,24 @@ body {
   }
 
   .bg {
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
-    background-size: 126px, 135px, 153px;
-    background-position: -77px 13%, calc(100% + 47px) 53%, -76px 84%;
+    background-image: none;
+  }
+
+  .bg-ball-1 {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg);
+    background-repeat: no-repeat;
+    background-position: -77px 7px;
+    background-size: 126px;
+  }
+
+  .bg-ball-2 {
+    background-position: calc(100% + 47px) 1580px;
+    background-size: 135px;
+  }
+
+  .bg-ball-3 {
+    background-position: -76px 40px;
+    background-size: 153px;
   }
 
   .footer-banner {
@@ -11810,10 +11839,10 @@ body {
 }
 
 .case-bg {
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
-  background-size: 65vw auto, 361px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg);
+  background-size: 65vw auto;
   background-repeat: no-repeat;
-  background-position: right top, -267px 44%;
+  background-position: right top;
 }
 .case-bg::before {
   content: "";
@@ -11825,6 +11854,13 @@ body {
   left: 0;
   z-index: -1;
   border-bottom-left-radius: 300px;
+}
+
+.case-bg-ball-1 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
+  background-size: 361px;
+  background-repeat: no-repeat;
+  background-position: -267px 325px;
 }
 
 .case-banner {
@@ -11847,13 +11883,18 @@ body {
 
 @media screen and (max-width: 576px) {
   .case-bg {
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
-    background-position: right top, -108px 52%;
-    background-size: auto 576px, 204px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg);
+    background-position: right top;
+    background-size: auto 576px;
   }
   .case-bg::before {
     border-bottom-left-radius: 150px;
     height: 567px;
+  }
+
+  .case-bg-ball-1 {
+    background-size: 204px;
+    background-position: -108px 677px;
   }
 
   .case-banner {

@@ -18,18 +18,38 @@
 }
 
 // wrap background-image
+// .bg {
+//   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg),
+//     url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg),
+//     url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg),
+//     url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
+//   background-repeat: no-repeat;
+//   // 黃色背景不用 100vh 量，避免在平板中變得超高
+//   background-size: 60% auto, 360px, 310px, 150px;
+//   // ball_2 top: 1694 / 3690 = 46%
+//   // ball_3 top: 2640 / 3690 = 72%
+//   background-position: right top, -180px calc(100vh - 180px),
+//     calc(100% + 100px) 46%, 50px 72%;
+// }
 .bg {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg),
-    url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg),
-    url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg),
-    url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
+    url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg);
   background-repeat: no-repeat;
   // 黃色背景不用 100vh 量，避免在平板中變得超高
-  background-size: 60% auto, 360px, 310px, 150px;
-  // ball_2 top: 1694 / 3690 = 46%
-  // ball_3 top: 2640 / 3690 = 72%
-  background-position: right top, -180px calc(100vh - 180px),
-    calc(100% + 100px) 46%, 50px 72%;
+  background-size: 60% auto, 360px, 150px;
+  background-position: right top, -180px calc(100vh - 180px);
+}
+.bg-ball-2 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% + 100px) 420px;
+  background-size: 310px;
+}
+.bg-ball-3 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
+  background-repeat: no-repeat;
+  background-position: 50px 40px;
+  background-size: 150px;
 }
 
 // media
@@ -96,14 +116,21 @@
     background-position: center calc(100% - 32px);
   }
   .bg {
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg),
-      url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg),
-      url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
-    background-size: 126px, 135px, 153px;
-    // ball_1 top: 743  / 5775 = 13%
-    // ball_2 top: 3067 / 5775 = 53%
-    // ball_3 top: 4827 / 5775 = 84%
-    background-position: -77px 13%, calc(100% + 47px) 53%, -76px 84%;
+    background-image: none;
+  }
+  .bg-ball-1 {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg);
+    background-repeat: no-repeat;
+    background-position: -77px 7px;
+    background-size: 126px;
+  }
+  .bg-ball-2 {
+    background-position: calc(100% + 47px) 1580px;
+    background-size: 135px;
+  }
+  .bg-ball-3 {
+    background-position: -76px 40px;
+    background-size: 153px;
   }
   .footer-banner {
     min-height: 460px;
