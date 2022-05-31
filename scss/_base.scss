@@ -19,6 +19,10 @@ body {
 }
 
 @media screen and(max-width: 576px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .navbar {
     border-bottom: 2px solid $secondary;
     background-color: #fff;
