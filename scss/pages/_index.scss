@@ -1,36 +1,37 @@
-// overwrite bootstrap's settings
-.carousel-indicators {
-  button {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 0;
-    margin: 0 0.5rem;
-    background-color: $gray-400;
-    // remove default padding on <button>
-    padding: 0;
-    &.active {
-      width: 1rem;
-      border-radius: 5rem;
-      background-color: $secondary;
+// overwrite swiper's settings
+// overwrite pagination's default margin
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 0.5rem;
+}
+
+.swiper {
+  // 調版面
+  &-wrapper {
+    padding-left: 0.5rem;
+  }
+  &-slide {
+    padding-right: 1rem;
+  }
+  // 調位置
+  &-pagination {
+    position: static;
+    // 客製樣式
+    &-bullet {
+      width: 10px;
+      height: 10px;
+      transition: width 300ms linear;
+      &-active {
+        width: 1rem;
+        border-radius: 5rem;
+        background-color: $secondary;
+      }
     }
   }
 }
 
 // wrap background-image
-// .bg {
-//   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg),
-//     url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg),
-//     url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg),
-//     url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
-//   background-repeat: no-repeat;
-//   // 黃色背景不用 100vh 量，避免在平板中變得超高
-//   background-size: 60% auto, 360px, 310px, 150px;
-//   // ball_2 top: 1694 / 3690 = 46%
-//   // ball_3 top: 2640 / 3690 = 72%
-//   background-position: right top, -180px calc(100vh - 180px),
-//     calc(100% + 100px) 46%, 50px 72%;
-// }
 .bg {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg),
     url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg);

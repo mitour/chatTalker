@@ -824,16 +824,16 @@ progress {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-.5 * var(--bs-gutter-x));
-  margin-left: calc(-.5 * var(--bs-gutter-x));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 .row > * {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
 }
 
@@ -7039,15 +7039,15 @@ textarea.form-control-lg {
 }
 
 .ratio-4x3 {
-  --bs-aspect-ratio: calc(3 / 4 * 100%);
+  --bs-aspect-ratio: 75%;
 }
 
 .ratio-16x9 {
-  --bs-aspect-ratio: calc(9 / 16 * 100%);
+  --bs-aspect-ratio: 56.25%;
 }
 
 .ratio-21x9 {
-  --bs-aspect-ratio: calc(9 / 21 * 100%);
+  --bs-aspect-ratio: 42.8571428571%;
 }
 
 .fixed-top {
@@ -11677,16 +11677,27 @@ body {
     margin-bottom: 60px;
   }
 }
-.carousel-indicators button {
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 0.5rem;
+}
+
+.swiper-wrapper {
+  padding-left: 0.5rem;
+}
+.swiper-slide {
+  padding-right: 1rem;
+}
+.swiper-pagination {
+  position: static;
+}
+.swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  border-radius: 50%;
-  border: 0;
-  margin: 0 0.5rem;
-  background-color: #dddddd;
-  padding: 0;
+  -webkit-transition: width 300ms linear;
+  transition: width 300ms linear;
 }
-.carousel-indicators button.active {
+.swiper-pagination-bullet-active {
   width: 1rem;
   border-radius: 5rem;
   background-color: #ffd153;

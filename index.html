@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <title>ChatTalker AI 機器人</title>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="./scss/all.css">
 </head>
 
@@ -208,10 +212,10 @@
 
       <!-- 好評如潮 -->
       <div class="bg-ball-3">
-        <article class="feedback container mb-xl">
+        <article class="swiper feedback container mb-xl">
           <h2 class="mb-md-4 text-center fw-bold lh-base">好評如潮</h2>
-          <ul class="row row-cols-lg-3 row-cols-1 p-0">
-            <li class="col">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
               <img class="avatar rounded-circle shadow-xs"
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/user01.jpg"
                 alt="avatar">
@@ -228,7 +232,7 @@
                 </section>
               </div>
             </li>
-            <li class="col">
+            <li class="swiper-slide">
               <img class="avatar rounded-circle shadow-xs"
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/user02.jpg"
                 alt="avatar">
@@ -245,7 +249,7 @@
                 </section>
               </div>
             </li>
-            <li class="col">
+            <li class="swiper-slide">
               <img class="avatar rounded-circle shadow-xs"
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/user03.jpg"
                 alt="avatar">
@@ -262,16 +266,32 @@
                 </section>
               </div>
             </li>
+            <li class="swiper-slide">
+              <img class="avatar rounded-circle shadow-xs"
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/user01.jpg"
+                alt="avatar">
+              <div class="card px-lg-3 py-lg-2 border-0 rounded-4 shadow-xs">
+                <section class="card-body d-flex flex-column">
+                  <h3 class="card-title mt-lg-4 mt-3 h6 fw-bold lh-base">清心寡慾設計公司</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="m-0 h6 lh-base">Lina 執行長</h4>
+                    <span class="rate rate-5 d-inline-block"></span>
+                  </div>
+                  <p class="card-text pt-4 pb-lg-4 pb-3 border-bottom order-first">
+                    原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。
+                  </p>
+                </section>
+              </div>
+            </li>
           </ul>
-          <nav class="carousel-indicators pt-2 pb-md-2 position-relative text-center">
-            <button type="button"></button>
-            <button type="button"></button>
-            <button type="button"></button>
-            <button class="active" type="button"></button>
+          <nav class="swiper-pagination">
           </nav>
         </article>
+      </div>
+
     </main>
   </div>
+
 
   <!-- footer -->
   <footer class="footer">
@@ -287,6 +307,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'
     integrity='sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=='
     crossorigin='anonymous'></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/all.js"></script>
 </body>
 
 </html>
