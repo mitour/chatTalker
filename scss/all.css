@@ -11815,11 +11815,11 @@ body {
     padding-top: 290px;
   }
 }
-.btn-check:checked + .btn-outline-primary,
-.btn-check:active + .btn-outline-primary,
-.btn-outline-primary:active,
-.btn-outline-primary.active,
-.btn.btn-outline-primary:hover {
+.case .btn-check:checked + .btn-outline-primary,
+.case .btn-check:active + .btn-outline-primary,
+.case .btn-outline-primary:active,
+.case .btn-outline-primary.active,
+.case .btn.btn-outline-primary:hover {
   color: #fff;
 }
 

@@ -1,11 +1,13 @@
 // overwrite bootstrap's settings
 // 方案選項按鈕 hover 跟 active 時的文字顏色
-.btn-check:checked + .btn-outline-primary,
-.btn-check:active + .btn-outline-primary,
-.btn-outline-primary:active,
-.btn-outline-primary.active,
-.btn.btn-outline-primary:hover {
-  color: #fff;
+.case {
+  .btn-check:checked + .btn-outline-primary,
+  .btn-check:active + .btn-outline-primary,
+  .btn-outline-primary:active,
+  .btn-outline-primary.active,
+  .btn.btn-outline-primary:hover {
+    color: #fff;
+  }
 }
 
 // faq 手風琴圓角、icon
